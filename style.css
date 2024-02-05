@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#heading{
+    background:linear-gradient(to right, red, yellow);
+    color: white;
+    height: 2em;
+    line-height: 2em;
+    font-size: 3em;
+}
+
+.elements{
+    margin-top: 4em;
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1em;
+}
+
+.element{
+    /* box-sizing: border-box; */
+    border: 2px solid black;
+    margin: 1em;
+    border-radius: 50%;
+    padding: 1em;
+    object-fit: cover;
+    transition: all ease-in-out 50ms;
+}
+
+.element:hover{
+    transform: scale(1.1);
+    transition: all ease-in-out 50ms;
+}
+.element:active{
+    border: 0.2px solid transparent;
+}
+
+#paper, #stone, #scissors{
+    height: 100px;
+    width: 100px;
+    padding: 1em;
+    
+}
+
+.scores{
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+    font-size: 3em;
+}
+
+.msg{
+    margin-top: 1em;
+    font-size: 2em;
+}
+
+.msg p{
+    display: inline;
+    border-radius: 40px;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
